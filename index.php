@@ -17,9 +17,11 @@ include_once "data.php";
         <th>age</th>
         <th>address</th>
     </tr>
-    <?php foreach($array as $key => $value):?>
+    <?php foreach($student as $key => $value):?>
     <tr>
         <td><?php echo $value["name"] ?></td>
+        <td><?php echo $value["age"] ?></td>
+        <td><?php echo $value["address"] ?></td>
     </tr>
     <?php endforeach;?>
 </table>
